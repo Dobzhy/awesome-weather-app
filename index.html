@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What's The Weather?</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Choose location"
+          id="search-text-input"
+        />
+        <input type="submit" value="Go" id="search-button" />
+      </form>
+      <button id="current-location-button">Locate me</button>
+      <div class="row">
+        <div class="col">
+          <div class="current-location">
+            <h1 id="current-city">Stockholm</h1>
+            <h2 id="current-date">Sunday, October 23</h2>
+            <div class="weather-icon-main">
+              <img src="img/cloudy-day.png" alt="weather" width="150px" />
+            </div>
+            <br />
+            <p>Partly Cloudy</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="weather-details">
+            <div class="current-temp">
+              <span id="daily-temp">7</span>
+              <span>
+                <a href="#" id="current-temp-celsius">°C</a>
+              </span>
+              <span class="divider">|</span>
+              <span>
+                <a href="#" id="current-temp-fahrenheit">°F</a>
+              </span>
+            </div>
+            <div class="details" col-12>
+              <div class="col-12">
+                Precipitation: <span class="precipitation">97%</span>
+              </div>
+              <div class="col-12">
+                Humidity: <span class="humidity">71%</span>
+              </div>
+              <div class="col-12">Wind: <span class="wind">0 km/h</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="week-forecast">
+          <div class="row justify-content-center">
+            <div class="col">
+              Mon <br /><br /><img
+                src="img/rain.png"
+                alt="weather"
+                width="50px"
+              /><br /><br />4°C / 8°C
+            </div>
+            <div class="col">
+              Tue <br /><br /><img
+                src="img/rain.png"
+                alt="weather"
+                width="50px"
+              /><br /><br />8°C / 10°C
+            </div>
+            <div class="col">
+              Wed <br /><br /><img
+                src="img/thunderstorm.png"
+                alt="weather"
+                width="50px"
+              /><br /><br />8°C / 13°C
+            </div>
+            <div class="col">
+              Thu <br /><br /><img
+                src="img/cloudy.png"
+                alt="weather"
+                width="50px"
+              /><br /><br />6°C / 11°C
+            </div>
+            <div class="col">
+              Fri <br /><br /><img
+                src="img/thunderstorm.png"
+                alt="weather"
+                width="50px"
+              /><br /><br />9°C / 13°C
+            </div>
+          </div>
+        </div>
+        <footer><span><a href="https://github.com/Dobzhy/weather-app">Open source code</span> by Olga Dobzhynska</footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
