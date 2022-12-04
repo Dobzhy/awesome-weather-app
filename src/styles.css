@@ -7,13 +7,13 @@ body {
 }
 
 h1 {
-  padding: 50px 20px 0 10px;
-  font-size: 26px;
+  padding: 30px 20px 0 10px;
+  font-size: 28px;
 }
 
 h2 {
   padding: 0 20px 20px 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 p {
@@ -49,20 +49,11 @@ footer {
   font-size: 10px;
 }
 
-.current-location {
-  padding-top: 20px;
-}
-
 .current-temp {
   font-size: 86px;
-  padding-top: 150px;
+  padding-top: 170px;
   text-align: center;
   font-weight: normal;
-}
-
-.details {
-  padding-top: 30px;
-  text-align: center;
 }
 
 .week-forecast {
@@ -74,16 +65,26 @@ footer {
 
 .weather-icon-main {
   display: block;
-  padding-left: 60px;
+  padding-left: 50px;
+  padding-top: 10px;
 }
 
-#current-temp-celsius {
+.details {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#description {
+  font-weight: bold;
+}
+
+#current-temp-cel {
   font-size: 30px;
   color: grey;
   text-decoration: none;
 }
 
-#current-temp-celsius:hover {
+#current-temp-cels:hover {
   font-weight: bold;
 }
 
@@ -91,12 +92,12 @@ footer {
   font-size: 30px;
   color: gray;
 }
-#current-temp-fahrenheit {
+#current-temp-far {
   font-size: 30px;
   color: gray;
   text-decoration: none;
 }
 
-#current-temp-fahrenheit:hover {
+#current-temp-far:hover {
   font-weight: bold;
 }
