@@ -29,8 +29,8 @@
           id="search-text-input"
         />
         <input type="submit" value="Go" id="search-button" />
-      </form>
-      <button id="current-location-button">Locate me</button>
+          <button id="current-location-button" button class="btn btn-primary" type="button">Locate me</button>
+        </form> 
       <div class="row">
         <div class="col">
           <div class="current-location">
@@ -40,7 +40,7 @@
               <img src="img/cloudy-day.png" alt="weather" width="150px" />
             </div>
             <br />
-            <p>Partly Cloudy</p>
+            <p id="description">Partly Cloudy</p>
           </div>
         </div>
         <div class="col">
@@ -48,21 +48,19 @@
             <div class="current-temp">
               <span id="daily-temp">7</span>
               <span>
-                <a href="#" id="current-temp-celsius">°C</a>
+                <a href="#" id="current-temp-cel">°C</a>
               </span>
               <span class="divider">|</span>
               <span>
-                <a href="#" id="current-temp-fahrenheit">°F</a>
+                <a href="#" id="current-temp-far">°F</a>
               </span>
             </div>
             <div class="details" col-12>
               <div class="col-12">
-                Precipitation: <span class="precipitation">97%</span>
+                Humidity: <span id="humidity"></span>%
               </div>
-              <div class="col-12">
-                Humidity: <span class="humidity">71%</span>
+              <div class="col-12">Wind: <span id="wind"></span> km/h
               </div>
-              <div class="col-12">Wind: <span class="wind">0 km/h</span></div>
             </div>
           </div>
         </div>
@@ -72,7 +70,7 @@
               Mon <br /><br /><img
                 src="img/rain.png"
                 alt="weather"
-                width="50px"
+                width="50px" 
               /><br /><br />4°C / 8°C
             </div>
             <div class="col">
